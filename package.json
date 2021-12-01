@@ -1,0 +1,19 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Oh my food\r Projet 3 par OpenClassroom",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DorianeHumbert/Projet3OMF.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DorianeHumbert/Projet3OMF/issues"
+  },
+  "homepage": "https://github.com/DorianeHumbert/Projet3OMF#readme"
+}
