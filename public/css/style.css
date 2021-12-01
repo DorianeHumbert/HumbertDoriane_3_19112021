@@ -1,5 +1,19 @@
 header {
-  border: 50px solid pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header.home .fas {
+  display: none;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  max-width: 767px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
