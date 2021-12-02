@@ -1,3 +1,6 @@
 @mixin font($fontFamily) {
     font-family: $fontFamily, sans-serif;
 }
+@mixin background($background){
+    background-color: #f6f6f6;
+}

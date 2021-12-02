@@ -8,6 +8,16 @@ body a {
   color: black;
 }
 
+.title {
+  background-color: #f6f6f6;
+}
+.title__search {
+  background-color: #eaeaea;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .list {
   width: 100%;
   background-color: #f6f6f6;

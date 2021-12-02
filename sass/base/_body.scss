@@ -8,7 +8,15 @@ body {
         color: black;
     }
 }
-
+.title{
+    @include background("$background");
+    &__search{
+        background-color:#eaeaea;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
 .list{
     width: 100%;
     background-color: (rgb(246, 246, 246));
