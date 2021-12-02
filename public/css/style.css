@@ -1,3 +1,12 @@
+body {
+  max-width: 767px;
+  margin: auto;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -11,9 +20,19 @@ header a {
   color: black;
 }
 
-body {
-  max-width: 767px;
-  margin: auto;
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer h4 {
+  padding: 3%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer li {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */

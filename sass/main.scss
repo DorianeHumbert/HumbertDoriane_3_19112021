@@ -1,12 +1,7 @@
 @import "./utils/variables";
 @import "./utils/fonctions";
 @import "./utils/mixins";
-@import "./base/typography";
+@import "./base/body";
 @import "./components/button";
 @import "./layouts/header";
 @import "./layouts/footer";
-
-body {
-    max-width: 767px;
-    margin: auto;
-}
