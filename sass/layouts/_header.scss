@@ -1,7 +1,9 @@
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding-top: 3%;
+
     &.home {
         .fas{
             display: none;
@@ -11,7 +13,8 @@ header {
         text-decoration: none;
         color: black;
     }
-    // img {
-        
-    // }
+    img {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -1,0 +1,23 @@
+.restaurants{
+    width: 95%;
+}
+.restaurantCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 2%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 3px 3px 6px gainsboro;
+    
+    &__img img {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    &__txt {
+        display: flex;
+    }
+}
