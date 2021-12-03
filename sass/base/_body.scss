@@ -16,12 +16,26 @@ body {
         display: flex;
         justify-content: center;
     }
+    .fas{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        margin-left: 100px;
+        color: #404040
+    }
+}
+.title input{
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .list{
     width: 100%;
     background-color: (rgb(246, 246, 246));
     padding-top: 20px;
     h2{
-        margin-left: 2%;
+        margin-left: 6%;
     }
 }

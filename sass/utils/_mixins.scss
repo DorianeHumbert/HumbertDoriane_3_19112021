@@ -9,10 +9,12 @@
 }
 @mixin nouveau($nouveau){
     position: absolute;
+    margin: 0;
     top: 5px;
     right: 15px;
+    font-size: 15px;
     background-color: #99E2D0;
-    color: #138a6e;
+    color: #158e71;
     padding: 2%;
     font-weight: bold;
 }
