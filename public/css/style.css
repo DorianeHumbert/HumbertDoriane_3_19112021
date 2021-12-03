@@ -27,7 +27,7 @@ body a {
   margin-left: 2%;
 }
 
-.btn {
+button {
   background: linear-gradient(#ff79DA, #9356DC);
   border-radius: 50px;
   width: 55%;
@@ -40,23 +40,36 @@ body a {
 
 .restaurants {
   width: 95%;
+  background-color: #f6f6f6;
 }
 
 .restaurantCard {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding-bottom: 2%;
+  margin-bottom: 2%;
   border-radius: 15px;
   background-color: white;
-  box-shadow: 3px 3px 6px gainsboro;
+  box-shadow: 6px 6px 10px #dfdbdb;
+}
+.restaurantCard__img {
+  position: relative;
 }
 .restaurantCard__img img {
   width: 100%;
   height: 200px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
+}
+.restaurantCard__img p {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #138a6e;
+  padding: 2%;
+  font-weight: bold;
 }
 .restaurantCard__txt {
   display: flex;

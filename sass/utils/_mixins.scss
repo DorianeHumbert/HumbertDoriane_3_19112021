@@ -4,3 +4,15 @@
 @mixin background($background){
     background-color: #f6f6f6;
 }
+@mixin boxshadow($boxshadow){
+    box-shadow: 6px 6px 10px #dfdbdb;
+}
+@mixin nouveau($nouveau){
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    background-color: #99E2D0;
+    color: #138a6e;
+    padding: 2%;
+    font-weight: bold;
+}
