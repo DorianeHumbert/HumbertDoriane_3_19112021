@@ -10,21 +10,34 @@ body a {
 
 .title {
   background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .title__search {
   background-color: #eaeaea;
   width: 100%;
   display: flex;
   justify-content: center;
+  border-top: #d5d5d559 3px groove;
 }
 .title .fas {
   display: flex;
   align-items: center;
   font-size: 15px;
-  margin-left: 100px;
   color: #404040;
 }
-
+.title h1 {
+  text-align: center;
+  margin: 40px;
+  margin-bottom: 10px;
+}
+.title p {
+  text-align: center;
+  opacity: 0.6;
+  margin: 0px 0px 30px 0px;
+}
 .title input {
   border: none;
   background-color: transparent;
@@ -52,6 +65,7 @@ button {
   font-weight: bold;
   border: none;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 
 .restaurants {
@@ -83,12 +97,12 @@ button {
 .restaurantCard__img p {
   position: absolute;
   margin: 0;
-  top: 5px;
-  right: 15px;
-  font-size: 15px;
+  top: 13px;
+  right: 10px;
+  font-size: 12px;
   background-color: #99E2D0;
   color: #158e71;
-  padding: 2%;
+  padding: 6px 10px;
   font-weight: bold;
 }
 .restaurantCard__txt {
@@ -104,7 +118,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 3%;
+  margin: 3%;
 }
 header.home .fas {
   display: none;
@@ -116,6 +130,7 @@ header a {
 header img {
   display: flex;
   justify-content: center;
+  width: 45%;
 }
 
 footer {

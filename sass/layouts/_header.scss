@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 3%;
+    margin: 3%;
 
     &.home {
         .fas{
@@ -16,5 +16,6 @@ header {
     img {
         display: flex;
         justify-content: center;
+        width: 45%;
     }
 }
