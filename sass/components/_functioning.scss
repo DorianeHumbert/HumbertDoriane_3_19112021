@@ -1,0 +1,7 @@
+.functioning__button{
+    border-radius: 20px;
+    width: 90%;
+    margin: 4%;
+    @include boxshadow ("$boxshadow");
+    @include background("$background");
+}

@@ -5,7 +5,7 @@
     background-color: #f6f6f6;
 }
 @mixin boxshadow($boxshadow){
-    box-shadow: 6px 6px 10px #dfdbdb;
+    box-shadow: 3px 3px 5px #b9b9b9;
 }
 @mixin nouveau($nouveau){
     position: absolute;
@@ -17,4 +17,14 @@
     color: #158e71;
     padding: 6px 10px;
     font-weight: bold;
+}
+@mixin functioning($functioning){
+    @include background("$background");
+    border-radius: 20px;
+    width: 90%;
+}
+@mixin flexbox($flexbox){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
