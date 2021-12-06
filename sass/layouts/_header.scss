@@ -1,10 +1,11 @@
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     margin: 3%;
 
     &.home {
+        justify-content: center;
         .fas{
             display: none;
         }
@@ -17,5 +18,9 @@ header {
         display: flex;
         justify-content: center;
         width: 45%;
+    }
+    .fas{
+        margin-left: 10px;
+        margin-right: 80px;
     }
 }
