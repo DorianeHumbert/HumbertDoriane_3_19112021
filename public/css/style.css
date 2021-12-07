@@ -56,6 +56,7 @@ body a {
   width: 100%;
   background-color: #f6f6f6;
   padding-top: 20px;
+  padding-bottom: 50px;
 }
 .list h2 {
   margin-left: 6%;
@@ -72,9 +73,12 @@ body a {
   background-color: #f6f6f6;
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
+  transform: translateY(-50px);
 }
 .menu h2 {
   margin-left: 15px;
+  font-size: 18px;
+  font-weight: initial;
 }
 .menu__title {
   display: flex;
@@ -86,6 +90,10 @@ body a {
   font-size: 30px;
   font-weight: normal;
 }
+.menu__title .far {
+  font-size: 25px;
+  margin-right: 5px;
+}
 .menu__category {
   display: flex;
   flex-direction: column;
@@ -94,7 +102,7 @@ body a {
 .menu__choice {
   background-color: white;
   border-radius: 20px;
-  width: 95%;
+  width: 92%;
   padding-left: 10px;
   margin-bottom: 15px;
 }
@@ -109,8 +117,14 @@ body a {
 .menu__item p {
   margin: 0px 10px 10px 5px;
 }
+.menu__item .bold {
+  font-weight: bold;
+}
 
 .functioning__button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border-radius: 20px;
   width: 90%;
   margin: 4%;
@@ -127,7 +141,6 @@ button {
   font-weight: bold;
   border: none;
   cursor: pointer;
-  margin-bottom: 50px;
   box-shadow: 3px 3px 5px #b9b9b9;
 }
 
@@ -155,9 +168,26 @@ button {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
-  object-position: center 60%;
+  object-position: center 62%;
 }
-.restaurantCard__img p {
+.restaurantCard__txt {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurantCard__txt h3 {
+  margin: 10px 10px 5px 10px;
+}
+.restaurantCard__txt p {
+  margin: 0px 10px 10px 10px;
+}
+.restaurantCard__txt .far {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  font-size: 25px;
+}
+
+.new {
   position: absolute;
   margin: 0;
   top: 13px;
@@ -167,14 +197,6 @@ button {
   color: #158e71;
   padding: 6px 10px;
   font-weight: bold;
-}
-.restaurantCard__txt {
-  display: flex;
-  justify-content: space-around;
-}
-.restaurantCard__txt .far {
-  display: flex;
-  align-items: center;
 }
 
 header {
@@ -212,6 +234,7 @@ footer h4 {
   font-size: 15px;
   font-weight: 100;
   padding: 3%;
+  margin: 0;
 }
 footer a {
   text-decoration: none;

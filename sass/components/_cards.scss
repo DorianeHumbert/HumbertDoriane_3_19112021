@@ -22,17 +22,22 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         object-fit: cover;
-        object-position: center 60%;
-    }
-    &__img p{
-        @include nouveau("$nouveau");
+        object-position: center 62%;
     }
     &__txt {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        h3{
+            margin:10px 10px 5px 10px;; 
+        }
+        p {
+            margin:0px 10px 10px 10px;
+        }
     }
     &__txt .far{
         display: flex;
         align-items: center;
+        margin-right: 30px;
+        font-size: 25px;
     }
 }

@@ -1,4 +1,7 @@
 .functioning__button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 20px;
     width: 90%;
     margin: 4%;

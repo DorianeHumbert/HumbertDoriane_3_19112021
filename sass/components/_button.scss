@@ -7,6 +7,5 @@ button{
     font-weight: bold;
     border: none;
     cursor: pointer;
-    margin-bottom: 50px;
     @include boxshadow ("$boxshadow");
 }
