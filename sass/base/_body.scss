@@ -12,6 +12,7 @@ body {
     @include background("$background");
     @include flexbox ("$flexbox");
     align-items: center;
+    padding-bottom: 50px;
     &__search{
         background-color:#eaeaea;
         width: 100%;
