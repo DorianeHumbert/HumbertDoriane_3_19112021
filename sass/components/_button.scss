@@ -1,6 +1,5 @@
 button{
     background: linear-gradient($color-secondary, $color-primary);
-    border-radius: 50px;
     width: 55%;
     height: 40px;
     color: white;
@@ -8,4 +7,5 @@ button{
     border: none;
     cursor: pointer;
     @include boxshadow ("$boxshadow");
+    @include borderRadius ("$borderRadius");
 }

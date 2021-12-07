@@ -10,5 +10,7 @@
 @mixin flexbox($flexbox){
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+@mixin borderRadius ($borderRadius){
+    border-radius: 20px;
 }

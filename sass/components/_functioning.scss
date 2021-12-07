@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 20px;
     width: 90%;
     margin: 4%;
     @include boxshadow ("$boxshadow");
     @include background("$background");
+    @include borderRadius ("$borderRadius");
 }
