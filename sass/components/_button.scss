@@ -6,6 +6,6 @@ button{
     font-weight: bold;
     border: none;
     cursor: pointer;
-    @include boxshadow ("$boxshadow");
+    box-shadow: 3px 3px 5px #b7B7B7;
     @include borderRadius ("$borderRadius");
 }

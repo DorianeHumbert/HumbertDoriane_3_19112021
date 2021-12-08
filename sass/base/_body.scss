@@ -76,6 +76,21 @@ main{
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
     transform: translateY(-50px);
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        h1{
+            @include font("shrikhand");
+            font-size: 25px;
+            font-weight: normal;
+            margin: 5% 0% 0% 5%;
+        }
+        .far {
+            font-size: 20px;
+            margin-right: 25px;
+        }
+    }
     h2{
         margin-left: 15px;
         font-size: 18px;
@@ -84,22 +99,6 @@ main{
         width: 12%;
         height: 25px;
         margin-top: 10%;
-    }
-
-    &__title{
-        display: flex;
-        justify-content: space-around;
-        align-items: baseline;
-        h1{
-            @include font("shrikhand");
-            font-size: 30px;
-            font-weight: normal;
-            margin: 5% 0% 0% 0%;
-        }
-        .far {
-            font-size: 25px;
-            margin-right: 5px;
-        }
     }
     &__category{
         @include flexbox ("$flexbox");
