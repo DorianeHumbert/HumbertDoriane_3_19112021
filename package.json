@@ -4,7 +4,8 @@
   "description": "Oh my food\r Projet 3 par OpenClassroom",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css -w --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/DorianeHumbert/Projet3OMF/issues"
   },
-  "homepage": "https://github.com/DorianeHumbert/Projet3OMF#readme"
+  "homepage": "https://github.com/DorianeHumbert/Projet3OMF#readme",
+  "browserslist": "last 4 versions"
 }
