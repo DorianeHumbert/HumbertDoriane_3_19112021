@@ -8,4 +8,5 @@ button{
     cursor: pointer;
     box-shadow: 3px 3px 5px #b7B7B7;
     @include borderRadius ("$borderRadius");
+    @include font ("Roboto");
 }

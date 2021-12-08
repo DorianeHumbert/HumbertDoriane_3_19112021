@@ -1,9 +1,9 @@
 .functioning__button{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     width: 90%;
     margin: 4%;
+    height: 70px;
     @include boxshadow ("$boxshadow");
     @include background("$background");
     @include borderRadius ("$borderRadius");

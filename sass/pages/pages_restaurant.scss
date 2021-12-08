@@ -1,0 +1,70 @@
+main{
+    @include background ('$background');
+}
+.img__background{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+.menu{
+    @include background('$background');
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    transform: translateY(-50px);
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        h1{
+            @include font("shrikhand");
+            font-size: 25px;
+            font-weight: normal;
+            margin: 5% 0% 0% 5%;
+        }
+        .far {
+            font-size: 20px;
+            margin-right: 30px;
+        }
+    }
+    h2{
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: initial;
+        border-bottom: 3px solid $color-tertiary;
+        width: 12%;
+        height: 25px;
+        margin-top: 10%;
+    }
+    &__category{
+        @include flexbox ("$flexbox");
+        align-items: center;
+    }
+    &__choice {
+        @include boxshadow ('$boxshadow');
+        @include borderRadius ("$borderRadius");
+        background-color: white;
+        width: 92%;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        h3{
+           margin: 0px 0px 10px 5px;
+           padding-top: 10px;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        p {
+            margin:0px 10px 10px 5px;
+        }
+        .bold{
+            font-weight: bold;
+        }
+    }
+    .btn__pages{
+        display: flex;
+        justify-content: center;
+        padding:25px 0px 0px 0px;
+    }
+}
