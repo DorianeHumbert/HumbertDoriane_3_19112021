@@ -1,10 +1,10 @@
 .title{
-    @include background("$background");
-    @include flexbox ("$flexbox");
+    @include background();
+    @include flexcolumn ();
     align-items: center;
     padding-bottom: 50px;
     &__search{
-        background-color:#eaeaea;
+        @include background (#eaeaea);
         width: 100%;
         display: flex;
         justify-content: center;
@@ -35,7 +35,7 @@
     }
 }
 .functioning {
-    @include flexbox ("$flexbox");
+    @include flexcolumn ();
     margin: 20px 0px 50px 10px;
     h2{
         margin-left: 4%;
@@ -44,7 +44,7 @@
         margin-left: -8px;
         margin-right: 6%;
         p{
-            @include flexbox ("$flexbox");
+            @include flexcolumn ();
             justify-content: center;
             align-items: center;
             background-color: $color-primary;
@@ -84,9 +84,9 @@
     .title {
         width: 70%;
         margin: auto;
-        @include borderRadius ("$borderRadius");
+        @include borderRadius ();
         &__search {
-            @include borderRadius ("$borderRadius");
+            @include borderRadius ();
             input{
                 text-align: center;
             }
@@ -99,5 +99,13 @@
     h2{
         width: 100%;
     }
+    }
+}
+@media (min-width:992px) and (max-width:1400px){
+    .list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
     }
 }
