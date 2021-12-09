@@ -10,6 +10,11 @@
 }
 @media (min-width:768px) and (max-width:991px){
     .functioning__button{
-    width: 25%;
+        width: 25%;
+    }
+}
+@media (min-width:992px){
+    .functioning__button{
+        width: 25%;
     }
 }

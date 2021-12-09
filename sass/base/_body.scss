@@ -1,5 +1,4 @@
 body {
-    min-width: 100%;
     margin: auto;
     @include font("Roboto");
     
@@ -15,9 +14,9 @@ body {
         max-width: 991px;
     }
 }
-// @media (min-width:992px) and (max-width:1400px) {
-//     body {
-//         min-width: 992px;
-//         max-width: 1400px;
-//     }
-// }
+@media (min-width:992px){
+    body {
+        min-width: 992px;
+        max-width: 1400px;
+    }
+}

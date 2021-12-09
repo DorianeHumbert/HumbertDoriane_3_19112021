@@ -41,3 +41,22 @@ footer {
     }
 }
 }
+@media (min-width:992px){
+    footer{
+        h4{
+            font-size: 20px;
+            text-align: center;
+            padding: 2%;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+        }
+        li{
+            white-space: nowrap;
+            margin-bottom: 0;
+        }
+    }
+}

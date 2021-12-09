@@ -88,6 +88,7 @@
         &__search {
             @include borderRadius ();
             input{
+                width: 18%;
                 text-align: center;
             }
         }
@@ -96,20 +97,38 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    h2{
-        width: 100%;
-    }
+        h2{
+            width: 100%;
+        }
     }
 }
-// @media all and (max-width:1400px){
-//     .list{
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//         h2{
-//             margin-left: 5%;
-//             width: 100%;
-//             margin-bottom: 3%;
-//         }
-//     }
-// }
+@media (min-width:992px){
+    .title {
+        width: 60%;
+        margin: auto;
+        @include borderRadius ();
+        &__search {
+            @include borderRadius ();
+            input{
+                width: 12%;
+                text-align: center;
+            }
+        }
+    }
+    .functioning{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h2{
+            width: 100%;
+        }
+    }
+    .list{
+        @include borderRadius();
+        margin-bottom: 5%;
+        h2{
+            margin-left: 5%;
+            margin-bottom: 3%;
+        }
+    }
+}
