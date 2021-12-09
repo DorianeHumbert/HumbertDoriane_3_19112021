@@ -83,5 +83,20 @@
     .title {
         width: 70%;
         margin: auto;
+        @include borderRadius ("$borderRadius");
+        &__search {
+            @include borderRadius ("$borderRadius");
+            input{
+                text-align: center;
+            }
+        }
+    }
+    .functioning {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    h2{
+        width: 100%;
+    }
     }
 }
