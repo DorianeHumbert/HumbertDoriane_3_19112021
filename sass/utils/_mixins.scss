@@ -1,16 +1,16 @@
 @mixin font($fontFamily) {
     font-family: $fontFamily, sans-serif;
 }
-@mixin background($background){
-    background-color: #f6f6f6;
+@mixin background($background : #f6f6f6){
+    background-color: $background;
 }
-@mixin boxshadow($boxshadow){
-    box-shadow: 3px 3px 5px #e6e6e6;
+@mixin boxshadow($color:#e6e6e6){
+    box-shadow: 3px 3px 5px $color;
 }
-@mixin flexbox($flexbox){
+@mixin flexcolumn(){
     display: flex;
     flex-direction: column;
 }
-@mixin borderRadius ($borderRadius){
-    border-radius: 20px;
+@mixin borderRadius ($borderRadius : 20px){
+    border-radius: $borderRadius;
 }

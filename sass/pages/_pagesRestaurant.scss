@@ -1,5 +1,5 @@
 main{
-    @include background ('$background');
+    @include background ();
 }
 .img__background{
     width: 100%;
@@ -8,7 +8,7 @@ main{
     }
 }
 .menu{
-    @include background('$background');
+    @include background();
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
     transform: translateY(-50px);
@@ -37,13 +37,13 @@ main{
         margin-top: 10%;
     }
     &__category{
-        @include flexbox ("$flexbox");
+        @include flexcolumn ();
         align-items: center;
     }
     &__choice {
-        @include boxshadow ('$boxshadow');
-        @include borderRadius ("$borderRadius");
-        background-color: white;
+        @include boxshadow ();
+        @include borderRadius ();
+        background-color: $color-white;
         width: 92%;
         padding-left: 10px;
         margin-bottom: 3%;
