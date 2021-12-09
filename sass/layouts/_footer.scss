@@ -32,3 +32,14 @@ footer {
         margin-right: 2%;
     }
 }
+// Media queries //
+@media (min-width:768px) and (max-width:991px){
+    footer{
+        h4{
+            padding:5%
+        }
+        ul{
+        margin: 0px;
+    }
+}
+}
