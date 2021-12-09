@@ -21,8 +21,7 @@
     .fas{
         display: flex;
         align-items: center;
-        font-size: 15px;
-        color: #404040
+        color: #404040;
     }
     h1{
         text-align: center;
@@ -77,5 +76,12 @@
     padding-bottom: 50px;
     h2{
         margin-left: 6%;
+    }
+}
+// Media queries //
+@media (min-width:768px) and (max-width:991px) {
+    .title {
+        width: 70%;
+        margin: auto;
     }
 }

@@ -10,3 +10,8 @@ button{
     @include borderRadius ("$borderRadius");
     @include font ("Roboto");
 }
+@media (min-width:768px) and (max-width:991px) {
+    button{
+        width: 35%;
+    }
+}
