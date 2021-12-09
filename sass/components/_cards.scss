@@ -39,3 +39,13 @@
         font-size: 25px;
     }
 }
+@media (min-width:768px) and (max-width:991px){
+    .restaurants{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .restaurantCard{
+        width: 45%;
+    }
+}
