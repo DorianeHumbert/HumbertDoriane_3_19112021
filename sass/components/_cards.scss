@@ -1,15 +1,15 @@
 .restaurants{
     width: 95%;
-    @include background("$background");
+    @include background();
 }
 .restaurantCard{
     width: 95%;
     margin-bottom: 5%;
     margin-left: 5%;
-    background-color: white;
-    @include borderRadius ("$borderRadius");
-    @include boxshadow("$boxshadow");
-    @include flexbox ("$flexbox");
+    @include background ($color-white);
+    @include borderRadius ();
+    @include boxshadow();
+    @include flexcolumn ();
     &__img {
         position: relative;
     }
@@ -42,10 +42,19 @@
 @media (min-width:768px) and (max-width:991px){
     .restaurants{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
     }
     .restaurantCard{
         width: 45%;
+    }
+}
+@media (max-width:1400px){
+    .restaurants{
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+    }
+    .restaurantCard{
+        width: 20%;
     }
 }

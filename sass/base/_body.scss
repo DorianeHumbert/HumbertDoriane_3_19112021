@@ -1,11 +1,11 @@
 body {
-    max-width: 767px;
+    min-width: 100%;
     margin: auto;
     @include font("Roboto");
     
     a{
         text-decoration: none;
-        color: black;
+        color: $color-black;
     }
 }
 // Media queries //

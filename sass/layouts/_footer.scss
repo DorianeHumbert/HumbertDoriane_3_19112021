@@ -1,6 +1,6 @@
 footer {
-    background-color:#353535;
-    color: white;
+    @include background(#353535);
+    color: $color-white;
     padding-bottom: 20px;
     h4{
         @include font("Shrikhand");
@@ -13,7 +13,7 @@ footer {
     a {
         display: flex;
         text-decoration: none;
-        color: white;
+        color: $color-white;
     }
     ul{
         margin: auto;
@@ -26,8 +26,7 @@ footer {
     .fas{
         min-height: 20px;
         min-width: 20px;       
-        display: flex;
-        flex-direction: column;
+        @include flexcolumn;
         align-items: center;
         margin-right: 2%;
     }
