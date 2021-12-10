@@ -34,17 +34,26 @@ footer {
 @media (min-width:768px) and (max-width:991px){
     footer{
         h4{
-            padding:5%
+            font-size: 22px;
+            text-align: center;
         }
         ul{
-        margin: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0px;
+            margin: 0;
+        }
+        li{
+            white-space: nowrap;
+            margin-bottom: 0;
+        }
     }
-}
 }
 @media (min-width:992px){
     footer{
         h4{
-            font-size: 20px;
+            font-size: 24px;
             text-align: center;
             padding: 2%;
         }
@@ -52,7 +61,7 @@ footer {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: auto;
+            padding: 0px;
         }
         li{
             white-space: nowrap;

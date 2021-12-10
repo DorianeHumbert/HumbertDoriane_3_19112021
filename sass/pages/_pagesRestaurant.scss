@@ -28,6 +28,7 @@ main{
         }
     }
     h2{
+        align-self: flex-start;
         margin-left: 4%;
         font-size: 18px;
         font-weight: initial;
@@ -71,6 +72,7 @@ main{
 @media (min-width:768px) and (max-width:991px) {
     .menu{
         &__title{
+            justify-content: space-around;
             h1{
                 font-size: 35px;
             }
@@ -79,24 +81,31 @@ main{
                 margin-right: 5%;
             }
         }
+        &__choice{
+            width: 75%;
+        }
         h2{
-            margin-bottom: 4%;
-            width: 6%;
+            align-self: flex-start;
+            margin-left: 13.7%;
         }
     }
 }
 @media (min-width:992px){
     .img__background{
-        display: flex;
-        justify-content: center;
         img{
-        @include borderRadius();
-        width: 70%;
+        height: 450px;
+        object-fit: cover;
+        object-position: center 80%;
         }
     }
     .menu{
+        &__full{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
         &__title{
-            margin-top: 3.7%;
+            justify-content: center;
         h1{
             font-size: 40px;
             margin: 4%;
@@ -106,12 +115,14 @@ main{
             margin-right: 5%;
         }
         }
-        h2{
-            
-            margin: 2% 0% 2% 4%;
+        &__category{
+            width: 100%;
+        h2{ 
+            margin: 2% 0% 5% 4%;
+        }
         }
         &__choice{
-            margin-bottom: 1%;
+            margin-bottom: 5%;
         }
     }
 }
