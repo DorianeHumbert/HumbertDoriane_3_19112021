@@ -85,3 +85,36 @@ main{
         }
     }
 }
+@media (min-width:992px){
+    .img__background{
+        display: flex;
+        justify-content: center;
+        img{
+        @include borderRadius(100%);
+        width: 70%;
+        }
+    }
+    main {
+        @include borderRadius();
+    }
+    .menu{
+        &__title{
+            margin-top: 5%;
+        h1{
+            font-size: 40px;
+            margin: 4%;
+        }
+        .far{
+            font-size: 40px;
+            margin-right: 5%;
+        }
+        }
+        h2{
+            
+            margin: 2% 0% 2% 4%;
+        }
+        &__choice{
+            margin-bottom: 1%;
+        }
+    }
+}

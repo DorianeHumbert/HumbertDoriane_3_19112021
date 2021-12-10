@@ -27,6 +27,7 @@ header {
 @media (min-width:768px) and (max-width:991px){
     header{
         .fas{
+            font-size: 20px;
             margin-right: 250px;
         }
         img{
@@ -36,6 +37,10 @@ header {
 }
 @media (min-width:992px){
     header{
+        .fas{
+            font-size: 25px;
+            margin-right: 480px;
+        }
         img{
             width: 25%;
         }
