@@ -90,12 +90,9 @@ main{
         display: flex;
         justify-content: center;
         img{
-        @include borderRadius(100%);
+        @include borderRadius();
         width: 70%;
         }
-    }
-    main {
-        @include borderRadius();
     }
     .menu{
         &__title{
