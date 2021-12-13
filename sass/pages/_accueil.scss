@@ -87,9 +87,12 @@
         @include borderRadius ();
         &__search {
             @include borderRadius ();
+            .fas{
+                margin-left: 9%;
+            }
             input{
-                width: 18%;
-                text-align: center;
+                width: 25%;
+                text-align: start;
             }
         }
     }
@@ -109,9 +112,12 @@
         @include borderRadius ();
         &__search {
             @include borderRadius ();
+            .fas{
+                margin-left: 15%
+            }
             input{
-                width: 12%;
-                text-align: center;
+                width: 25%;
+                text-align: start;
             }
         }
     }
