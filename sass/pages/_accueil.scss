@@ -5,7 +5,7 @@
     padding-bottom: 50px;
     &__search{
         @include background (#eaeaea);
-        width: 100%;
+        @include width();
         display: flex;
         justify-content: center;
         border-top: #d5d5d559 3px groove;
@@ -15,7 +15,7 @@
             margin: 10px;
             font-size: 13px;
             font-weight: bold;
-            width: 30%;
+            @include width(30%);
         }
     }
     .fas{
@@ -51,7 +51,7 @@
             color: white;
             border-radius: 50%;
             height: 25px;
-            width: 25px;
+            @include width(25px);
             font-size: 12px;
         }
     }
@@ -60,17 +60,18 @@
             margin-right: 8%;
             display: flex;
             justify-content: center;
-            width: 15px;
+            @include width(5%);
             color: gray;
             font-size: 17px;
         }
         h3{
             font-size: 15px;
+            font-weight: normal;
         }
     }
 }
 .list{
-    width: 100%;
+    @include width();
     background-color: (rgb(246, 246, 246));
     padding-top: 20px;
     padding-bottom: 50px;
@@ -82,7 +83,7 @@
 // Media queries //
 @media (min-width:768px) and (max-width:991px) {
     .title {
-        width: 70%;
+        @include width(70%);
         margin: auto;
         @include borderRadius ();
         &__search {
@@ -91,7 +92,7 @@
                 margin-left: 9%;
             }
             input{
-                width: 25%;
+                @include width(25%);
                 text-align: start;
             }
         }
@@ -101,13 +102,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         h2{
-            width: 100%;
+            @include width();
         }
     }
 }
 @media (min-width:992px){
     .title {
-        width: 60%;
+        @include width(60%);
         margin: auto;
         @include borderRadius ();
         &__search {
@@ -116,7 +117,7 @@
                 margin-left: 15%
             }
             input{
-                width: 25%;
+                @include width(25%);
                 text-align: start;
             }
         }
@@ -126,7 +127,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         h2{
-            width: 100%;
+            @include width();
         }
     }
     .list{

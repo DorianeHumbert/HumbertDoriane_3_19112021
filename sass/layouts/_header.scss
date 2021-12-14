@@ -5,7 +5,6 @@ header {
     margin: 3%;
 
     &.home {
-        justify-content: center;
         .fas{
             display: none;
         }
@@ -17,10 +16,8 @@ header {
     img {
         display: flex;
         justify-content: center;
-        width: 45%;
-    }
-    .fas{
-        margin-right: 80px;
+        @include width(45%);
+        margin-left: 27%;
     }
 }
 // Media queries //
@@ -28,10 +25,10 @@ header {
     header{
         .fas{
             font-size: 20px;
-            margin-right: 250px;
         }
         img{
-            width: 35%;
+            @include width(35%);
+            margin-left: 32%;
         }
     }
 }
@@ -39,10 +36,10 @@ header {
     header{
         .fas{
             font-size: 25px;
-            margin-right: 480px;
         }
         img{
-            width: 25%;
+            @include width(25%);
+            margin-left: 38%;
         }
     }
 }

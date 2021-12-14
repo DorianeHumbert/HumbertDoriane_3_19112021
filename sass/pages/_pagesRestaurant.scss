@@ -2,9 +2,9 @@ main{
     @include background ();
 }
 .img__background{
-    width: 100%;
+    @include width();
     img{
-        width: 100%;
+        @include width();
     }
 }
 .menu{
@@ -33,7 +33,7 @@ main{
         font-size: 18px;
         font-weight: initial;
         border-bottom: 3px solid $color-tertiary;
-        width: 12%;
+        @include width(12%);
         height: 25px;
         margin-top: 10%;
     }
@@ -45,7 +45,7 @@ main{
         @include boxshadow ();
         @include borderRadius ();
         background-color: $color-white;
-        width: 92%;
+        @include width(92%);
         padding-left: 10px;
         margin-bottom: 3%;
         h3{
@@ -82,7 +82,7 @@ main{
             }
         }
         &__choice{
-            width: 75%;
+           @include width(95%);
         }
         h2{
             align-self: flex-start;
@@ -102,7 +102,7 @@ main{
         &__full{
             display: flex;
             justify-content: space-around;
-            width: 100%;
+            @include width();
         }
         &__title{
             justify-content: center;
@@ -116,7 +116,7 @@ main{
         }
         }
         &__category{
-            width: 100%;
+            @include width();
         h2{ 
             margin: 2% 0% 5% 4%;
         }

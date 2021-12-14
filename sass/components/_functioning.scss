@@ -1,7 +1,7 @@
 .functioning__button{
     display: flex;
     align-items: center;
-    width: 90%;
+    @include width(90%);
     margin: 4%;
     height: 70px;
     @include boxshadow ();
@@ -15,11 +15,11 @@
 }
 @media (min-width:768px) and (max-width:991px){
     .functioning__button{
-        width: 25%;
+        @include width(25%);
     }
 }
 @media (min-width:992px){
     .functioning__button{
-        width: 25%;
+        @include width(25%);
     }
 }

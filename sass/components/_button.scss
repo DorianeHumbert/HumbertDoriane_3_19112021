@@ -1,6 +1,6 @@
 button{
     background: linear-gradient($color-secondary, $color-primary);
-    width: 55%;
+    @include width(55%);
     height: 40px;
     color: $color-white;
     font-weight: bold;
@@ -13,11 +13,11 @@ button{
 // Media queries //
 @media (min-width:768px) and (max-width:991px) {
     button{
-        width: 30%;
+        @include width(35%);
     }
 }
 @media (min-width:992px){
     button{
-        width: 20%;
+        @include width(27%);
     }
 }
