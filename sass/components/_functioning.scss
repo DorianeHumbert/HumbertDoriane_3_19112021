@@ -7,11 +7,12 @@
     @include boxshadow ();
     @include background();
     @include borderRadius ();
-    // transform: scale(1);
-    // transition: transform 400ms;
-    // &:hover{
-    //     transform: scale(1.5);
-    // }
+    cursor: pointer;
+    &:hover{
+        &::after{
+            
+        }
+    }
 }
 @media (min-width:768px) and (max-width:991px){
     .functioning__button{
