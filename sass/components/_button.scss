@@ -1,6 +1,5 @@
 button{
     background: linear-gradient($color-secondary, $color-primary);
-    @include width(55%);
     height: 40px;
     color: $color-white;
     font-weight: bold;
@@ -9,6 +8,11 @@ button{
     @include boxshadow(#b7B7B7);
     @include borderRadius ();
     @include font ("Roboto");
+    @include width(55%);
+    &:hover{
+        box-shadow: 6px 6px 6px #949494;
+        opacity: 0.9;
+    }
 }
 // Media queries //
 @media (min-width:768px) and (max-width:991px) {

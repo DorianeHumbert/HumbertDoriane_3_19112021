@@ -1,13 +1,31 @@
 .functioning__button{
     display: flex;
     align-items: center;
-    @include width(90%);
     margin: 4%;
     height: 70px;
+    @include width(90%);
     @include boxshadow ();
     @include background();
     @include borderRadius ();
+    position: relative;
     cursor: pointer;
+    &:hover{
+        &::after{
+            opacity: 0.2;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: darken($color-primary, 5);
+        opacity: 0;
+        transition: opacity 300ms;
+        @include borderRadius();
+    }
 }
 @media (min-width:768px) and (max-width:991px){
     .functioning__button{
