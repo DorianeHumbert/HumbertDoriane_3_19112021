@@ -22,9 +22,9 @@ main{
             font-weight: normal;
             margin: 5% 0% 0% 5%;
         }
-        .far {
-            font-size: 25px;
-            margin-right: 7%;
+        .heart{
+            height: 20px;
+            width: 7%;
         }
     }
     h2{
@@ -72,13 +72,17 @@ main{
 @media (min-width:768px) and (max-width:991px) {
     .menu{
         &__title{
-            justify-content: space-around;
             h1{
                 font-size: 35px;
             }
-            .far{
-                font-size: 30px;
-                margin-right: 5%;
+            .heart{
+                height: 25px;
+            }
+            .full{
+                font-size: 30px
+            }
+            .empty{
+                font-size: 30px
             }
         }
         &__choice{
@@ -99,21 +103,27 @@ main{
         }
     }
     .menu{
-        &__full{
-            display: flex;
-            justify-content: space-around;
-            @include width();
-        }
         &__title{
             justify-content: center;
         h1{
             font-size: 40px;
             margin: 4%;
         }
-        .far{
-            font-size: 40px;
-            margin-right: 5%;
+        .heart{
+            height: 35px;
+            width: 0;
         }
+        .full{
+            font-size: 40px
+        }
+        .empty{
+            font-size: 40px
+        }
+        }
+        &__full{
+            display: flex;
+            justify-content: space-around;
+            @include width();
         }
         &__category{
             @include width();

@@ -24,6 +24,7 @@
     &__txt {
         display: flex;
         justify-content: space-between;
+        margin: 0% 2%;
         h3{
             margin:10px 10px 5px 10px;; 
         }
@@ -51,11 +52,12 @@
     .empty{
         opacity: 1;
         position: absolute;
+        font-size: 25px;
     }
     &:hover {
         .empty {
             opacity: 0;
-            transition-duration: 500ms;
+            transition-duration: 550ms;
         }
         .full {
             opacity: 1;
