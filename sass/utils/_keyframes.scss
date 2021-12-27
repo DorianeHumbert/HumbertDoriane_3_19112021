@@ -1,8 +1,8 @@
 // Anim défilement menus //
 .menu__choice {
     transform: translateY(30px);
-        opacity: 0;
-        animation: scrolling 3s forwards;
+    opacity: 0;
+    animation: scrolling 3s forwards;
 }
 @keyframes scrolling{
     0%{
