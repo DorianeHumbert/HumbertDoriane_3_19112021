@@ -5,8 +5,12 @@ header {
     margin: 3%;
 
     &.home {
+        justify-content: center;
         .fas{
             display: none;
+        }
+        img{
+            margin-left: 0%;
         }
     }
     a {
