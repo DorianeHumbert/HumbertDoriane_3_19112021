@@ -1,7 +1,6 @@
 body {
     margin: auto;
     @include font("Roboto");
-    
     a{
         text-decoration: none;
         color: $color-black;
