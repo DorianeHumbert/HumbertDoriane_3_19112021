@@ -49,16 +49,25 @@ main{
         padding-left: 10px;
         margin-bottom: 3%;
         cursor: pointer;
-        white-space: nowrap;
         position: relative;
         overflow: hidden;
-        text-overflow: ellipsis;
         h3{
            margin: 0px 0px 10px 5px;
            padding-top: 10px;
+           max-width: 100%;
+           text-overflow: ellipsis;
+           overflow: hidden;
+           white-space: nowrap;
+           transition: max-width 0.5s ease;
         }
         &:hover {
+            & h3{
+                max-width: 80%;
+            }
             & .menu__item {
+                p:not(.bold){
+                    max-width: 60%;
+                }
                 & .bold {
                     transform: translateX(-200%);
                 }
@@ -76,6 +85,13 @@ main{
         justify-content: space-between;
         p {
             margin:0px 10px 10px 5px;
+        }
+        p:not(.bold) {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            transition: max-width 0.5s ease;
+            max-width: 100%;
         }
         .bold{
             font-weight: bold;
