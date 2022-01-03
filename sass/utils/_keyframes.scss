@@ -52,8 +52,6 @@
 	display: inline-block;
 	animation:flip 3.5s linear;
 	transform-origin:0 70%;
-	transform-style:preserve-3d;
-	-webkit-transform-style:preserve-3d;
 }
 .body__home {
     animation: body 3s forwards;
@@ -89,15 +87,15 @@
         overflow: auto;
     }
 }
-.loader>span:nth-child(1){
+.loader>.oh{
     color: $color-primary;
     animation-delay: 0.1s;
 }
-.loader>span:nth-child(2){
+.loader>.my{
 	animation-delay: 0.7s;
     color:$color-secondary;
 }
-.loader>span:nth-child(3){
+.loader>.food{
 	animation-delay: 1.3s;
     color:$color-primary;
 }

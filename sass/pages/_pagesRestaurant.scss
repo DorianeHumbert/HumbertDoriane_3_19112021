@@ -70,7 +70,7 @@ main{
                     max-width: 60%;
                 }
                 & .bold {
-                    transform: translateX(-200%);
+                    transform: translateX(-55px);
                 }
             }
             & .menu__check {
@@ -105,7 +105,7 @@ main{
         justify-content: center;
         align-items: center;
         @include background ($color-tertiary);
-        @include width(15%);
+        @include width(50px);
         position: absolute;
         top: 0;
         left: 100%;
@@ -123,6 +123,7 @@ main{
         padding:25px 0px 0px 0px;
     }
 }
+// Tablette//
 @media (min-width:768px) and (max-width:991px) {
     .menu{
         &__title{
@@ -141,13 +142,6 @@ main{
         }
         &__choice{
            @include width(75%);
-           &:hover {
-            & .menu__item {
-                & .bold {
-                    transform: translateX(-350%);
-                    }
-                }
-            }
             h3{
                 @include fontSize(18px);
             }
@@ -163,6 +157,7 @@ main{
         }
     }
 }
+// Destop//
 @media (min-width:992px){
     .img__background{
         img{
@@ -202,13 +197,6 @@ main{
         }
         &__choice{
             margin-bottom: 5%;
-            &:hover {
-                & .menu__item {
-                    & .bold {
-                        transform: translateX(-250%);
-                    }
-                }
-            }
             h3{
                 @include fontSize(21px);
             }
