@@ -83,5 +83,8 @@
     }
     .restaurantCard{
         @include width(20%);
+    &:hover{
+        box-shadow: 5px 5px 10px #aaa;
+    }
     }
 }
