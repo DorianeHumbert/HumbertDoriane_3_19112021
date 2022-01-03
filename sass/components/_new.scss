@@ -4,8 +4,8 @@
     top: 13px;
     right: 10px;
     @include fontSize(12px);
-    @include background($color-green-new-back);
-    color: $color-green-new-txt;
+    @include background($color-tertiary);
+    color: $color-new-txt;
     padding: 6px 10px;
     font-weight: bold;
 }
