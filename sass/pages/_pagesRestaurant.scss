@@ -6,6 +6,14 @@ main{
     img{
         @include width();
     }
+    &--enchantee{
+        img{
+        @include width();
+        height: 282px;
+        object-fit: cover;
+        object-position: center 65%;
+        }
+    }
 }
 .menu{
     @include background();
@@ -125,6 +133,20 @@ main{
 }
 // Tablette//
 @media (min-width:768px) and (max-width:991px) {
+    .img__background{
+        @include width();
+        img{
+            @include width();
+        }
+        &--enchantee{
+            img{
+            @include width();
+            height: 540px;
+            object-fit: cover;
+            object-position: center 69%;
+            }
+        }
+    }
     .menu{
         &__title{
             h1{
@@ -165,6 +187,14 @@ main{
         object-fit: cover;
         object-position: center 80%;
         }
+        &--enchantee{
+            img{
+            @include width();
+            height: 450px;
+            object-fit: cover;
+            object-position: center 60%;
+            }
+        }
     }
     .menu{
         &__title{
@@ -190,7 +220,7 @@ main{
             @include width();
         }
         &__category{
-            @include width();
+            @include width(30%);
         h2{ 
             margin: 2% 0% 5% 4%;
         }

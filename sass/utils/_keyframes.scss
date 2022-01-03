@@ -14,7 +14,7 @@
         opacity: 1;
     }
 }
-@for $i from 1 to 10 {
+@for $i from 1 to 11 {
     .menu__choice--scroll#{$i} {
         animation-delay: $i * 200ms;
     }
@@ -36,6 +36,7 @@
     left: 0;
     z-index: 1000;
     pointer-events: none;
+    white-space: nowrap;
 }
 .loader{
 	-webkit-perspective:700px;
