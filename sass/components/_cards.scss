@@ -35,7 +35,7 @@
             display: flex;
             align-items: center;
             margin-right: 30px;
-            font-size: 25px;
+            @include fontSize(25px);
         }
     }
 }
@@ -48,12 +48,12 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 25px;
+        @include fontSize(25px);
     }
     .empty{
         opacity: 1;
         position: absolute;
-        font-size: 25px;
+        @include fontSize(25px);
     }
     &:hover {
         .empty {

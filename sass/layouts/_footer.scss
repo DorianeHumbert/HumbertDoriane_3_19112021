@@ -4,7 +4,7 @@ footer {
     padding-bottom: 20px;
     h4{
         @include font("Shrikhand");
-        font-size: 18px;
+        @include fontSize(18px);
         font-weight: 100;
         padding: 5%;
         padding-left: 7%;
@@ -34,7 +34,7 @@ footer {
 @media (min-width:768px) and (max-width:991px){
     footer{
         h4{
-            font-size: 22px;
+            @include fontSize(22px);
             text-align: center;
         }
         ul{
@@ -53,7 +53,7 @@ footer {
 @media (min-width:992px){
     footer{
         h4{
-            font-size: 24px;
+            @include fontSize(24px);
             text-align: center;
             padding: 2%;
         }

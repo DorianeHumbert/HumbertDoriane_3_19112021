@@ -17,3 +17,6 @@
 @mixin width ($width: 100%){
     width: $width;
 }
+@mixin fontSize ($fontSize : 40px){
+    font-size: $fontSize;
+}

@@ -3,8 +3,8 @@
     margin: 0;
     top: 13px;
     right: 10px;
-    font-size: 12px;
-    background-color: $color-green-new-back;
+    @include fontSize(12px);
+    @include background($color-green-new-back);
     color: $color-green-new-txt;
     padding: 6px 10px;
     font-weight: bold;

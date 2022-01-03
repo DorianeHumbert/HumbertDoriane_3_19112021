@@ -1,12 +1,12 @@
 .functioning__button{
-    display: flex;
-    align-items: center;
-    margin: 4%;
-    height: 70px;
     @include width(90%);
     @include boxshadow ();
     @include background();
     @include borderRadius ();
+    display: flex;
+    align-items: center;
+    margin: 4%;
+    height: 70px;
     position: relative;
     cursor: pointer;
     &:hover{
